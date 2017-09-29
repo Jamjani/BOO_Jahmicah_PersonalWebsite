@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<title> Catses and splashes </title>
-<style type="text/css">
+<head>
+<style>
 
-div {
+.title{
 	font-family: Pussyfoot;
 	font-size: 70px;
 	margin-left: 410px;
@@ -11,117 +11,136 @@ div {
 	margin-bottom: 50px;
 	color: white;
 } 
-#rcorners1 {
-    border-radius: 25px;
-	border: 2px solid white;
-    background-image: url(5.jpg);
-	background-size: 300px;
-    margin-left: 200px;
-    width: 300px;
-    height: 300px;    
-	float: left;
+.container {
+  position: relative;
+   border-radius: 25px;
+  width: 60%;
+  margin-left: 100px;
 }
-#rcorners5 {
-    border-radius: 25px;
-	border: 2px solid white;
-    background-image: url(6.jpg);
-	background-size: 300px;
-    margin-right: 200px;
-    width: 300px;
-    height: 300px;
-	float: right;
+
+.image {
+  display: block;
+  border: 2px solid white;
+  border-radius: 25px;
+  width: 100%;
+  height: auto;
 }
-#rcorners2 {
-    border-radius: 25px;
-	border: 2px solid white;
-    background-image: url(3.jpg);
-	background-size: 340px;
-	margin-top:350px;
-    width: 300px;
-    height: 300px;  
-	float: left;
-	margin-left: -300px;
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
 }
-#rcorners6 {
-    border-radius: 25px;
-	border: 2px solid white;
-    background-image: url(2.jpg);
-	background-size: 340px;
-    width: 300px;
-    height: 300px; 
-	float: right;
-	margin-right: 130px;
+
+.container:hover .overlay {
+  width: 100%;
 }
-#rcorners3 {
-    border-radius: 25px;
-	border: 2px solid white;
-    background-image: url(7.jpg);
-	background-size: 340px;
-    margin-left:130px;
-    width: 300px;
-    height: 300px; 
-	float: left;
-}
-#rcorners7 {
-    border-radius: 25px;
-	border: 2px solid white;
-    background-image: url(1.jpg);
-	background-size: 300px;
-    margin-right: 200px;
-    width: 300px;
-    height: 300px; 
-	float: right;
-}
-#rcorners4 {
-    border-radius: 25px;
-	border: 2px solid white;
-    background-image: url(8.jpg);
-	background-size: 300px;
-    margin-left: 200px;
-    width: 300px;
-    height: 300px; 
-	float: left;
-}
-#rcorners8 {
-    border-radius: 25px;
-	border: 2px solid white;
-    background-image: url(9.jpg);
-	background-size: 310px;
-    margin-right: 200px;
-    width: 300px;
-    height: 300px; 
-	float: right;
-}
-#rcorners9 {
-    border-radius: 25px;
-	border: 2px solid white;
-    background-image: url(4.jpg);
-	background-size: 310px;
-    margin-right: 120px;
-    width: 300px;
-    height: 300px; 
-	float: right;
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 </style>
-
+</head>
 <body>
-<div>
+<div class="title"> 
 FACTS ABOUT CATS 
 </div>
 
-<p id="rcorners1"> </p>
-<p id="rcorners5"> </p>
-<p id="rcorners2"> </p>
-<p id="rcorners6"> </p>
-<p id="rcorners3"> </p>
-<p id="rcorners7"> </p>
-<p id="rcorners4"> </p>
-<p id="rcorners8"> </p>
-<p id="rcorners9"> </p>
-<br>
-<hr>
-<a href="home.html"> <h4> Home</h4> </a>
+<table> <tr>
+	<td><div class="container">
+	<img src="5.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+  <div class="text">White cats with blue eyes<br> are prone to deafness</div>
+</div>
+</td>
+<td><div class="container">
+  <img src="1.jpg" alt="k" class="image">
+  <div class="overlay">
+    <div class="text">Cats are nearsighted, <br>
+	but their peripheral vision and night vision<br> 
+	are much better than that of humans</div>
+  </div>
+</div>
+</td>
+<td>
+<div class="container">
+  <img src="6.jpg" alt="l" class="image">
+  <div class="overlay">
+    <div class="text">Cats' collarbones don't connect <br>to their other bones,<br>
+as these bones are buried<br> in their shoulder muscles.</div>
+  </div>
+</div>
+</td> </tr>
+<tr>
+<td><div class="container">
+  <img src="2.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Cats dream, <br>
+	just like people do.</div>
+  </div>
+</div></td>
+<td><div class="container">
+  <img src="9.jpg" alt="k" class="image">
+  <div class="overlay">
+    <div class="text">MEOOOWR!</div>
+  </div>
+</div>
+</td>
+<td>
+<div class="container">
+  <img src="3.jpg" alt="l" class="image">
+  <div class="overlay">
+    <div class="text">Cats have an extra organ <br>
+	that allows them to taste<br> scents on the air, which is why<br> 
+	your cat stares at you with <br>her mouth open from time to time
+	<br> :PPP</div>
+  </div>
+</div>
+</td> </tr>
+<tr>
+<td><div class="container">
+  <img src="8.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Cats find it threatening <br>
+	when you make direct eye<br> contact with them</div>
+  </div>
+</div></td>
+<td><div class="container">
+  <img src="4.jpg" alt="k" class="image">
+  <div class="overlay">
+    <div class="text">Cats live longer <br>when they stay indoors.</div>
+  </div>
+</div>
+</td>
+<td>
+<div class="container">
+  <img src="7.jpg" alt="l" class="image">
+  <div class="overlay">
+    <div class="text">A cat's learning style is <br>
+	about the same as a 2- to<br> 3-year-old child.</div>
+  </div>
+  </div>
+</div>
+</td> </tr>
+
+</table>
 <body background="sec.jpg">
 
 </body>
+</html>
