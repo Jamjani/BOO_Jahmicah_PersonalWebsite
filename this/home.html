@@ -4,14 +4,66 @@
 <style type="text/css">
 h4 {
 	color: violet;
-	font-family: Curlz MT;
+	font-family:Minimal;
 	font-size: 20px;
-} </style>
+} 
+.dropbtn {
+    background-color: transparent;
+	border-size: 20px;
+	border-color: white;
+    color: white;
+    font-size: 16px;
+	font-family: Minimal;
+    cursor: pointer;
+	
+}
+
+.dropdown {
+    position: relative;
+	float: left;
+	margin-left: 50px;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
 <body>
 
 <body background="bes.jpg">
 <br>
 <br>
+<div class="dropdown">
+  <button class="dropbtn"> = </button>
+  <div class="dropdown-content">
+    <a href="blog.html">Blog</a>
+    <a href="about_me.html">About Life:)</a>
+    <a href="aboutCats.html">Gallery of Cats</a>
+  </div>
+</div>
 <center>
 <img src="helloE.png" width="950px" height="400px">
 </center>
@@ -27,16 +79,7 @@ h4 {
 <br>
 <br>
 <br>
-<br>
-<center>
-	<table border="2" style="width:35%;background-color:white; border-color: LightGray;">
-		
-		<tr align="middle">
-			<td width="150px"> <a href="about_me.html"> <h4> About Life:)</h4> </a> </td>
-			<td width="150px"> <a href="aboutCats.html"> <h4> Gallery of Cats </h4> </a> </td> 
-			<td width="150px"> <a href="blog.html"> <h4> Blog </h4> </a> </td>
-		</tr>
-		</table>
-	</center>
+
+
 </body>
 </html>
