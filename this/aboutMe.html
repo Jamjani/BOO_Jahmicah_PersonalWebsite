@@ -48,16 +48,13 @@
 .dropdown:hover .dropbtn {
     background-color: white;
 }
-.container {
+.cont {
   position: relative;
    border-radius: 25px;
   width: 60%;
   margin-left: 100px;
 }
-.container:hover .overlay {
-  width: 100%;
-}
-.image {
+.image1 {
   display: block;
   border: 5px solid white;
   border-radius: 50px;
@@ -65,6 +62,49 @@
   height: 450px;
   margin-top: 100px;
   clear: left;
+}
+.container {
+  position: relative;
+   border-radius: 25px;
+  width: 60%;
+  margin-left: 100px;
+}
+
+.image {
+  display: block;
+  border: 2px solid white;
+  border-radius: 25px;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 .table1 {
 	margin-left: 50px;
@@ -75,9 +115,17 @@
 	height: 180px;
 	clear: left;
 }
-.title {
-	font-family: 
+.title{
+	font-family: Pussyfoot;
+	font-size: 70px;
+	margin-left: 380px;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	color: white;
+
 }
+
+
 </style>
 <body>
 <body background="vin.png">
@@ -89,8 +137,8 @@
   </div>
 </div>
 <center>
-<div class="container">
-<img src="whut.png" class="image" >
+<div class="cont">
+<img src="whut.png" class="image1" >
 </div> 
 </center>
 <hr>
@@ -167,5 +215,89 @@
 <img src="resume.png" height="1300px" width="1000px">
 </center>
 <hr>
+
+<div class="title"> 
+FACTS ABOUT CATS
+</div>
+
+<table> <tr>
+	<td><div class="container">
+	<img src="pic1.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+  <div class="text">White cats with blue eyes<br> are prone to deafness</div>
+</div>
+</td>
+<td><div class="container">
+  <img src="pic2.jpg" alt="k" class="image">
+  <div class="overlay">
+    <div class="text">Cats live longer <br>when they stay indoors.</div>
+  </div>
+</div>
+</td>
+<td>
+<div class="container">
+  <img src="pic3.jpg" alt="l" class="image">
+  <div class="overlay">
+    <div class="text">Cats' collarbones don't connect <br>to their other bones,<br>
+as these bones are buried<br> in their shoulder muscles.</div>
+  </div>
+</div>
+</td> </tr>
+<tr>
+<td><div class="container">
+  <img src="pic4a.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Cats dream, <br>
+	just like people do.</div>
+  </div>
+</div></td>
+<td><div class="container">
+  <img src="pic5a.jpg" alt="k" class="image">
+  <div class="overlay">
+    <div class="text">MEOOOWR!</div>
+  </div>
+</div>
+</td>
+<td>
+<div class="container">
+  <img src="pic6a.jpg" alt="l" class="image">
+  <div class="overlay">
+    <div class="text">Cats have an extra organ <br>
+	that allows them to taste<br> scents on the air, which is why<br> 
+	your cat stares at you with <br>her mouth open from time to time
+	<br> :PPP</div>
+  </div>
+</div>
+</td> </tr>
+<tr>
+<td><div class="container">
+  <img src="pic7a.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Cats find it threatening <br>
+	when you make direct eye<br> contact with them</div>
+  </div>
+</div></td>
+<td><div class="container">
+  <img src="pic8a.jpg" alt="k" class="image">
+  <div class="overlay">
+    <div class="text">Cats may yawn as a way to<br>
+	end a confrontation with <br>
+	another animal. Think of it<br>
+	as their "talk to the hand" gesture.</div>
+  </div>
+</div>
+</td>
+<td>
+<div class="container">
+  <img src="pic9.jpg" alt="l" class="image">
+  <div class="overlay">
+    <div class="text">A cat's learning style is <br>
+	about the same as a 2- to<br> 3-year-old child.</div>
+  </div>
+  </div>
+</div>
+</td> </tr>
+</table>
+<br>
 </body>
 </html>
